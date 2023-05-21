@@ -8,19 +8,27 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">Search</button>
-    </form>
+    <div class="container">
+      <div class="wrapper">
+        <form class="search-form" id="search-form">
+          <input
+            class="search-form__input"
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button class="search-form__btn" type="submit">
+            <svg widith="20px" height="20px">
+              <use href="icon.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="gallery" id="gallery"></div>
 
-    <div class="gallery" id="gallery"></div>
-
-    <button type="button" class="load-more" id="load-more">Load more</button>
+      <button type="button" class="load-more" id="load-more">Load more</button>
+    </div>
 
     <script src="index.js" type="module"></script>
   </body>
